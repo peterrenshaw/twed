@@ -3,6 +3,9 @@
 -- date: 2016APR30
 -- prog: pr
 -- desc: working example using Effects
+-- 
+--       works in conjunction with backend/rserve.py 
+-- 
 -- src : <http://www.elm-tutorial.org/040_effects/effects_2.html
 --======
 
