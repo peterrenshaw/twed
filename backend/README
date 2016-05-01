@@ -1,0 +1,6 @@
+2016MAY01
+* a simple server generating a 0-n integer on request to 
+  path.
+- takes into account CORS
+- used in conjunction with ../frontend/src/effects2.elm
+

@@ -1,0 +1,15 @@
+
+    Simple demo of an Elm project using a Python backend
+    The front end is written in Elm and talks to a Python
+    server at the back end.
+
+2016MAY01
+* read frontend/README for the Elm code 
+  <http://www.elm-tutorial.org/040_effects/effects_2.html> 
+
+* backend/README for the python code of this NodeJS example
+  <http://www.elm-tutorial.org/040_effects/tasks.html>
+
+* the code is part of the elm-tutorial example at 
+
+    <http://elm-tutorial.org/>

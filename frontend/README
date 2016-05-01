@@ -1,0 +1,17 @@
+2016MAY01
+
+* Elm code for frontend of application
+- based on this tutorial code
+  <http://www.elm-tutorial.org/040_effects/effects_2.html>
+- works in conjunction with backend/rserve.py
+
+* compiling works as such
+- SRC    source directory of elm code
+- TARGET final destination of JavaScript output
+
+  elm-make --output target/sourcename.js src/sourcename.elm
+  cp target/sourcename.js ../js
+
+- the js file is now read from the root *index.html* file
+
+
