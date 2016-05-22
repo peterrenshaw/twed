@@ -6,6 +6,13 @@
 
 2016MAY22
 
+* intall had to do following before make works 
+- create dir js/
+- create dir frontend/target
+- elm-install elm-lang/html
+
+
+
 * Elm graduated to 0.17, so read the updated tutorials
 - <http://guide.elm-lang.org>
 
