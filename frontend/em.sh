@@ -21,9 +21,9 @@
     clear
 
     echo "prep"
-    mkdir js
-    mkdir frontend/target
-    elm-install elm-lang/html
+    mkdir ../js
+    mkdir target/
+    elm package install elm-lang/html
 
     echo "elm make"
     elm-make --output target/ed.js src/form.elm

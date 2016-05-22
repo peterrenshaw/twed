@@ -5,12 +5,13 @@
 
 
 2016MAY22
+* installed on win machine
 
-* intall had to do following before make works 
+* install had to do following before make works 
 - create dir js/
 - create dir frontend/target
 - elm-install elm-lang/html
-
+- change to em.sh
 
 
 * Elm graduated to 0.17, so read the updated tutorials
