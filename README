@@ -11,6 +11,9 @@
 
 
 2016MAY22
+* uploaded git
+- remember dummy pwd in backend/rserve.py
+- added .* to .gitignore
 * backwards counter and visual indicator
 
 2016MAY21
