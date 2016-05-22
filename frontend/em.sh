@@ -24,9 +24,9 @@
 
     # uncomment, first time
     # build twed/backend/static, twed/js twed/frontend/target
-    #mkdir ../js
-    #mkdir ../backend/static
-    #mkdir target
+    mkdir ../js
+    mkdir ../backend/static
+    mkdir target
 
     elm package install elm-lang/html
 
