@@ -21,13 +21,24 @@
     clear
 
     echo "prep"
-    mkdir ../js
-    mkdir target/
+
+    # uncomment, first time
+    #mkdir ../js
+    #mkdir target/
+
     elm package install elm-lang/html
+
 
     echo "elm make"
     elm-make --output target/ed.js src/form.elm
-    cp target/ed.js ../js
-    ls ../js
 
+
+    echo "copy output"
+    cp target/ed.js ../js
+    cp target/ed.js backend/templates/js
+
+
+    echo "build"
+    ls ../js
+    
 }>&2

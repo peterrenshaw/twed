@@ -11,12 +11,26 @@ REQUIREMENTS
 
 <http://elm-lang.org/install>
 
-* make 
+* bash shell
 - if windows use Window Git install shell
 
-* python version 3 
+   # to build
+   $ twed/frontend/em.sh
+
+* python version 3, see twed/backend/py.sh
 - flask install
 - flask.cors
+- Pip
+
+   to install lastest Pip
+   $ python -m pip install --upgrade pip
+
+   to install Flask
+   $ pip3 install Flask
+   $ pip3 install Flask-Cors
+
+   to run backend
+   $ twed/backend/rserve.py
 
 <https://www.python.org/downloads/>
 

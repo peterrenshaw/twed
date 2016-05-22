@@ -21,6 +21,7 @@ from optparse import OptionParser
 
 
 from flask import Flask
+from flask import render_template
 from flask.ext.cors import CORS
 
 
