@@ -1,3 +1,15 @@
+#======
+# desc: Frontend
+#       using Elm to build a frontend editor and 
+#       backend python REST server to talk to twitter
+#======
+
+2016MAY22
+* change of focus. Elm graduated to 0.17 and now I'm
+  working on hooking the front-end to a backend server
+  that talks to twitter
+
+
 2016MAY01
 * a simple server generating a 0-n integer on request to 
   path.

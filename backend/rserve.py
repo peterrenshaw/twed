@@ -4,13 +4,13 @@
 
 #=====
 # name: rserve.py
-# date: 2016MAY01: added CORS support
+# date: 2016MAY22: reshape code as twit server
+#       2016MAY01: added CORS support
 #       2016APR28: checkin
 # prog: pr
 # desc: toy twitter poster
-# updt: added CORS support using Flask Cors
+# src : added CORS support using Flask Cors
 #       <https://github.com/corydolphin/flask-cors>
-# src : <https://docs.python.org/2/library/random.html#random.SystemRandom>
 #=====
 
 
@@ -34,11 +34,19 @@ app.config.update(dict(
     SECRET_KEY='febonehead'
 ))
 
+
+#------
+# index:
+#------
 @app.route('/')
 def index():
+    # TODO fix this
     return "{}".format(random.randint(0, 128))
 
 
+#------
+# entry point
+#------
 if __name__ == "__main__":
     app.run('0.0.0.0', port=PORT)
 

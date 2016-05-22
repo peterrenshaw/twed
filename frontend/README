@@ -1,3 +1,15 @@
+#======
+# desc: Frontend
+#       using Elm to build a frontend editor
+#======
+
+
+2016MAY22
+
+* Elm graduated to 0.17, so read the updated tutorials
+- <http://guide.elm-lang.org>
+
+
 2016MAY01
 
 * Elm code for frontend of application
