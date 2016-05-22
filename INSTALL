@@ -1,0 +1,54 @@
+#======
+# desc: Install
+#======
+
+
+2016MAY22
+
+REQUIREMENTS
+
+* elm version 0.17
+
+<http://elm-lang.org/install>
+
+* make 
+- if windows use Window Git install shell
+
+* python version 3 
+- flask install
+- flask.cors
+
+<https://www.python.org/downloads/>
+
+
+INSTALL
+
+* clean install, successful build using the following 
+  recipe
+
+      git clone https://github.com/peterrenshaw/twed.git
+      cd frontend
+      ./em.sh
+
+      this will:
+
+          create twed/frontend/target directory
+          create twed/js directory
+          
+          install the elm elm-lang/html module
+          install a few more elm modules
+
+          build the elm file into target js at twed/frontend/target/
+          copy target js file at twed/frontend/target/ to twed/js/ 
+
+          confirm output in twed/js 
+
+      you can then point your browser at twed/index.html
+      and see what happens. 
+
+      Not much at the moment, just an edit box with a text
+      counter which tells you the number of characters you 
+      can type in.
+
+      PR
+

@@ -5,8 +5,9 @@
 
 
 2016MAY22
-* installed on win machine
+* clean install, successful build
 
+* installed on win machine
 * install had to do following before make works 
 - create dir js/
 - create dir frontend/target
