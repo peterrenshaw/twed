@@ -4,10 +4,22 @@
 #       python REST server to talk to twitter
 #======
 
+
 2016MAY22
 * change of focus. Elm graduated to 0.17 and now I'm
   working on hooking the front-end to a backend server
   that talks to twitter
+* read ../INSTALL first
+
+
+* to run:
+
+    # build FRONTEND js from elm source
+    $ twed/frontend/em.sh
+
+    # install BACKEND, then run backend server
+    $ twed/backend/py.sh
+    $ twed/backend/rserve.py
 
 
 2016MAY01

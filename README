@@ -4,17 +4,24 @@
 # prog: pr
 # desc: 
 #
-#    Simple demo of an Elm project using a Python backend
+#    Simple elm project using a Python backend to talk to 
+#    twitter. Very 0.1 at the moment. Working on the editor.
+#    Backend simply shows an index page with basic editor.
+#
 #    The front end is written in Elm and talks to a Python
 #    server at the back end.
 #======
 
 
 2016MAY22
+* upgraded docs
+* to install and run read INSTALL first
+* quick test test trial install on Windows machine
 * uploaded git
 - remember dummy pwd in backend/rserve.py
 - added .* to .gitignore
 * backwards counter and visual indicator
+
 
 2016MAY21
 * re-init and checkin
@@ -24,13 +31,13 @@
 - <http://elm-lang.org/examples/field>
 - <http://elm-lang.org/examples/form>
 
+
 2016MAY01
 * read frontend/README for the Elm code 
   <http://www.elm-tutorial.org/040_effects/effects_2.html> 
-
 * backend/README for the python code of this NodeJS example
   <http://www.elm-tutorial.org/040_effects/tasks.html>
-
 * the code is part of the elm-tutorial example at 
 
     <http://elm-tutorial.org/>
+
