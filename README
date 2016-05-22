@@ -1,7 +1,17 @@
+#======
+# name: twed
+# date: 2016MAY01
+# prog: pr
+# desc: 
+#
+#    Simple demo of an Elm project using a Python backend
+#    The front end is written in Elm and talks to a Python
+#    server at the back end.
+#======
 
-    Simple demo of an Elm project using a Python backend
-    The front end is written in Elm and talks to a Python
-    server at the back end.
+
+2016MAY22
+* backwards counter and visual indicator
 
 2016MAY21
 * re-init and checkin
