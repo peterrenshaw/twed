@@ -31,18 +31,18 @@ PORT = 8090
 app = Flask(__name__)
 CORS(app)
 app.config.update(dict(
-    DEBUG=True,
+    DEBUG=False,
     SECRET_KEY='febonehead'
 ))
 
 
 #------
-# index:
+# index: editor page
 #------
 @app.route('/')
 def index():
-    # TODO fix this
-    return "{}".format(random.randint(0, 128))
+    """serve index page"""
+    return render_template('index.html')
 
 
 #------

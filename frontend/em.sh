@@ -23,8 +23,10 @@
     echo "prep"
 
     # uncomment, first time
+    # build twed/backend/static, twed/js twed/frontend/target
     #mkdir ../js
-    #mkdir target/
+    #mkdir ../backend/static
+    #mkdir target
 
     elm package install elm-lang/html
 
@@ -35,7 +37,7 @@
 
     echo "copy output"
     cp target/ed.js ../js
-    cp target/ed.js backend/templates/js
+    cp target/ed.js ../backend/static
 
 
     echo "build"
