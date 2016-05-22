@@ -17,6 +17,16 @@ import String exposing (..)
 -- #======
 
 
+import Html exposing (Html, Attribute, div, input, textarea, text)
+import Html.App as Html
+import Html.Events exposing (onClick, onInput)
+import Html.Attributes exposing (..)
+import String exposing (..)
+
+
+
+
+
 -- MAIN
 main = 
     Html.beginnerProgram {model = model, 
@@ -53,9 +63,9 @@ update msg model =
 view : Model -> Html Msg
 view model =
     div []
-        [ div [myStyle] [ messageCount model ]
-        , input [ placeholder "", onInput Change, myStyle ] []
-        , div [myStyle] [ text  (model.content) ]
+        [ --div [myStyle] [ messageCount model ]
+          inputCheck model          
+        , div [myStyle] [textarea [ placeholder "", autofocus True, onInput Change,  myStyle] []]
         ]
 
 
@@ -63,16 +73,28 @@ view model =
 messageCount : Model -> Html Msg
 messageCount model = 
     let
-        (size) =  String.length model.content
+        (size) =  140 - String.length model.content
     in 
         div [] [text (toString size)]
+
+inputCheck : Model -> Html Msg
+inputCheck model = 
+    let 
+        (color) =
+            if String.length model.content < 140 then
+                ("black")
+            else
+                ("red")
+    in
+         div [ style [("color", color)] ] [ messageCount model]
 
 -- STYLE
 myStyle =
   style
-    [ ("width", "100%")
-    , ("height", "40px")
-    , ("padding", "10px 0")
-    , ("font-size", "2em")
+    [ ("width", "80%")
+    , ("height", "60px")
+    , ("font-size", "1em")
     , ("text-align", "left")
     ]
+
+# vim: ff=unix:ts=4:sw=4:tw=78:noai:expandtab 
