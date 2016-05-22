@@ -40,25 +40,31 @@ INSTALL
 * clean install, successful build using the following 
   recipe
 
-      git clone https://github.com/peterrenshaw/twed.git
-      cd frontend
-      ./em.sh
+      $ git clone https://github.com/peterrenshaw/twed.git
+      $ twed/frontend/em.sh
 
-      this will:
+  this will:
 
-          create twed/frontend/target directory
-          create twed/js directory
+      create twed/frontend/target directory
+      create twed/js directory
           
-          install the elm elm-lang/html module
-          install a few more elm modules
+      install the elm elm-lang/html module
+      install a few more elm modules
 
-          build the elm file into target js at twed/frontend/target/
-          copy target js file at twed/frontend/target/ to twed/js/ 
+      build the elm file into target js at twed/frontend/target/
+      copy target js file at twed/frontend/target/ to twed/js/ and
+      backend
 
-          confirm output in twed/js 
+      confirm output in twed/js (and thus backend) 
 
       you can then point your browser at twed/index.html
-      and see what happens. 
+      and see what happens. Or you can run the 
+
+          $ twed/backend/py.sh
+          $ twed/backend/rserve.py
+
+      and point your browser to 127.0.0.1:8090
+
 
       Not much at the moment, just an edit box with a text
       counter which tells you the number of characters you 
