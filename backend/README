@@ -1,7 +1,7 @@
 #======
-# desc: Frontend
-#       using Elm to build a frontend editor and 
-#       backend python REST server to talk to twitter
+# desc: backend
+#       using Elm to build an editor and backend
+#       python REST server to talk to twitter
 #======
 
 2016MAY22
