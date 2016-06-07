@@ -4,14 +4,15 @@
 
 #===
 # name: twitter.py
-# date: 2013SEP22
+# date: 2016JUN07
+#       2013SEP22
 # prog: pr
 # desc: code allows twitter integration with bigbox
 #       Twython code allows full access to twit api
 #       ...along with restrictions.
 #
 # lisc: moving towards GPL3
-# copy: copyright (C) 2013 Peter Renshaw
+# copy: copyright (C) 2013-2016 Peter Renshaw
 #
 # use : 
 #       send: twitter.py -m "'I hit the city and I lost my band'"
@@ -55,33 +56,6 @@ from system import REL_PATH
 #
 
 
-#---
-# authenticate_r: pass in keys, object & return authenticated
-#                 for READ ONLY access only to twitter API
-#                 Twython object or F
-#---
-def authenticate_r(consumer_key, consumer_secret, access_token=""):
-    """
-    authenticate Twython object with keys & secrets, return 
-    obj or F
-    """
-    status = False
-    try:
-        # important: this only authenticates for READ ONLY api calls
-        status = Twython(consumer_key, consumer_secret, oauth_version=2)
-
-        # have access token?
-        # extract then save this for later on
-        q_access_token = access_token
-        if not access_token:
-            q_access_token = status.obtain_access_token()
-            print('access_token = %s' % q_access_token)
-        
-        status = Twython(consumer_key, access_token=q_access_token)
-    except TwythonError as e:
-        status = False    
-    return status
-
 
 #---
 # authenticate_rw: pass in keys, object & return authenticated
@@ -104,7 +78,8 @@ def authenticate_rw(consumer_key, consumer_secret,
 
 #---
 # name: Twy_rw
-# date: 2013SEP22
+# date: 2016JUN07
+#       2013SEP22
 # prog: pr
 # desc: simple wrapper for Twython object
 #       RW access to twitter API
