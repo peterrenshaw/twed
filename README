@@ -12,6 +12,9 @@
 #    server at the back end.
 #======
 
+2016JUN07
+* added backend/twitter code
+- test sending and saves to file
 
 2016MAY22
 * upgraded docs

@@ -3,7 +3,7 @@
 #======
 
 
-2016MAY22
+2016JUN07
 
 REQUIREMENTS
 
@@ -33,6 +33,17 @@ REQUIREMENTS
    $ twed/backend/rserve.py
 
 <https://www.python.org/downloads/>
+
+- Twython3
+
+   to install
+   $ sudo apt-get install python3-twython
+   $ cd twed/backend/twitter/
+   $ python3 status.py
+
+   result should be number of modules
+
+   $ twython has 133 modules
 
 
 INSTALL
